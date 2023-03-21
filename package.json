@@ -1,0 +1,20 @@
+{
+  "name": "tree-sitter-o2",
+  "version": "1.0.0",
+  "description": "tree-sitter-o2 to parse and enable syntax highlighting for o2",
+  "main": "bindings/node",
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build",
+    "test": "tree-sitter test && script/parse-examples",
+    "parse": "tree-sitter parse",
+    "test-windows": "tree-sitter test"    
+  },
+  "author": "André Reigoto",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.17.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.7"
+  }
+}

@@ -1,0 +1,10 @@
+Files under plugin/..... are automaticly executed at start up
+
+Files under lua/..... nead a requier ("file_name") to be executed
+
+You can also take advantage of the lua modules struture ex:
+  Let's say that the file exisit lua/super-plugin/init.lua
+  Doing a requier ("super-plugin") will call the init.lua file
+
+To reload a file that has been requier do (package representes a folder)
+lua package.loaded["package.file"] = nil
